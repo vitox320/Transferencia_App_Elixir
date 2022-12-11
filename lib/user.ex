@@ -12,4 +12,8 @@ defmodule Bank.User do
       balance: balance
     }
   end
+
+  def get_balance(account) do
+    IO.puts("Balance of this account is #{Map.get(account, :balance)}")
+  end
 end
